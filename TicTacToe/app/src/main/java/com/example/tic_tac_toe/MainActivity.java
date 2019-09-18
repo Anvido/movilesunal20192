@@ -66,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Human goes first
-        mInfoTextView.setText("You go first.");
+        //mInfoTextView.setText("You go first.");
+        mInfoTextView.setText(R.string.first_human);
     }
 
     private void setMove(char player, int location) {
@@ -95,20 +96,21 @@ public class MainActivity extends AppCompatActivity {
                 // If no winner yet, let the computer make a move
                 int winner = mGame.checkForWinner();
                 if (winner == 0) {
-                    mInfoTextView.setText("It's Android's turn.");
+                    mInfoTextView.setText(R.string.turn_computer);
                     int move = mGame.getComputerMove();
                     setMove(TicTacToeGame.COMPUTER_PLAYER, move);
                     winner = mGame.checkForWinner();
                 }
 
                 if (winner == 0)
-                    mInfoTextView.setText("It's your turn.");
+                    mInfoTextView.setText(R.string.turn_human);
                 else if (winner == 1)
-                    mInfoTextView.setText("It's a tie!");
+                    mInfoTextView.setText(R.string.result_tie);
                 else if (winner == 2)
-                    mInfoTextView.setText("You won!");
+                    mInfoTextView.setText(R.string.result_human_wins);
                 else
-                    mInfoTextView.setText("Android won!");
+                    mInfoTextView.setText(R.string.result_computer_wins);
+
             }
         }
     }
