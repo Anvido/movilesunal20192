@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SqliteApp</string>
+    <string-array name="class_array">
+        <item>Todos</item>
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fabrica de Software</item>
+    </string-array>
+
+    <string-array name="class_array1">
+        <item>Consultoría</item>
+        <item>Desarrollo a la medida</item>
+        <item>Fabrica de Software</item>
+    </string-array>
+</resources>

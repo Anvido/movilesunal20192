@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp">
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pagina web"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telefono"
+        android:padding="@dimen/view_padding"
+        android:inputType="phone"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Productos"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Servicios"
+        android:padding="@dimen/view_padding"
+        android:textSize="@dimen/add_edit_textsize"/>
+
+    <TextView android:text="Clasificación" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="clip_horizontal" />
+
+    <Spinner
+        android:id="@+id/class_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:id="@+id/button_add_update_company"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/button_padding"
+        android:text="Agregar empresa"
+        android:layout_gravity="center"/>
+</LinearLayout>
